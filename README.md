@@ -2,4 +2,4 @@
 confirmAndAlert  
 
 效果图:
-1.
+1.![image](https://github.com/LoveEmperor/xwzPlugin---confirmAndAlert/blob/master/1.png)
