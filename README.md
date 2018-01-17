@@ -1,0 +1,2 @@
+# xwzPlugin---confirmAndAlert
+confirmAndAlert
