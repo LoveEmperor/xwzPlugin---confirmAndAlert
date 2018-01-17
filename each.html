@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+		  content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+	<title>jq-each遍历</title>
+	<script type="text/javascript" src="../resources/js/bin/jquery.min.js"></script>
+</head>
+<body>
+<div id="title"></div>
+
+<input id="oneAlert" type="button" value="支付" />
+<input id="wxpay" type="button" value="支付" />
+
+</body>
+<script type="text/javascript" src="../resources/js/myConfirm.js"></script>
+<script language="javascript" type="text/javascript">
+
+//	window.confirm("ddd");
+	var data = {"list":[{"id":1,"content":"人生在世"},{"id":2,"content":"哪能没曲折"}]};
+	var str1 = '';
+	var str2 = '';
+	$.each(data.list, function(i, item) {
+
+		console.log(item.id);
+
+		str1 += '<p>'+data.list[i].id+data.list[i].content+'</p>';
+
+		$("#title").html(str1)
+	});
+
+	//-------------------------
+	$("#wxpay").bind("click", function () {
+
+		xwzconfirm('微信支付','请确认微信支付是否完成',function(r){
+			if(r)
+			{
+				//确定
+			}
+		});
+	});
+
+	$("#oneAlert").bind('click',function () {
+		xwzalert('微信支付','请确认微信支付是否完成',function(r){
+			if(r)
+			{
+				//确定
+			}
+		});
+	})
+
+</script>
+</html>
