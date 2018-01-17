@@ -5,4 +5,4 @@ confirmAndAlert
 
 1.![image](https://github.com/LoveEmperor/xwzPlugin---confirmAndAlert/blob/master/1.png)  
 
-2.![image](https://github.com/LoveEmperor/xwzPlugin---confirmAndAlert/blob/master/2.png)
+2.![image](https://github.com/LoveEmperor/xwzPlugin---confirmAndAlert/blob/master/3.png)
